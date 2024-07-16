@@ -1,12 +1,12 @@
-name: Deploy Hugo site to GitHub Pages
+name: Hugo build
 
 on:
   push:
     branches:
-      - main # Trigger deployment on push to the main branch
+      - main
   pull_request:
     branches:
-      - main # Optional: Trigger deployment on pull request to the main branch
+      - main
 
 jobs:
   build:
@@ -15,6 +15,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
 
       - name: Build the site
         run: hugo --minify
