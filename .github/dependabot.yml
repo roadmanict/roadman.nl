@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "gitsubmodule"
+    directory: "/" # Location of submodules in the repository, usually the root
+    schedule:
+      interval: "daily" # Check for updates daily
