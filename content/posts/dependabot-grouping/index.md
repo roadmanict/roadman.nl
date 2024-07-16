@@ -6,9 +6,7 @@ draft = true
 tags = ['Angular', 'NodeJS', 'Typescript', 'NPM', 'Dependabot']
 +++
 
-# Dependabot grouping
-
-For dependencies like Angular, it can be beneficial to group Dependabot pull requests. This can be achieved using the grouping feature:
+For dependencies like Angular, it can be beneficial to group Dependabot pull requests. Updating Angular dependencies individually can break the build. In this post I will explain how to group dependencies:
 
 ```yaml
 version: 2
@@ -39,4 +37,6 @@ updates:
           - "patch"
 ```
 
-In the above example, I configured an Angular group to match all dependencies that start with @angular by applying the @angular\* pattern. Angular dependencies will be grouped only when minor or patch versions change. For a new major Angular version, Dependabot will create a separate pull request.
+In the above example, Dependabot is configured to create an Angular group to match all dependencies that start with @angular by applying the @angular\* pattern. Angular dependencies will be grouped only when minor or patch versions change. For a new major Angular version, Dependabot will create a separate pull request. Example grouped pull request.
+
+![Dependabot grouping example](dependabot-grouping-example.png)

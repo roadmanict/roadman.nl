@@ -6,8 +6,6 @@ draft = true
 tags = ['Github', 'Github Actions', 'Dependabot', 'Automerging', 'Hugo', 'Rust', 'Angular']
 +++
 
-# Github Actions Dependabot and Automerging
-
 In this post I will explain how to configure a simple Github Actions workflow with Dependabot and Github Automerging.
 
 Automerging can be useful to allow automatic merging of pull requests after rules are fulfilled, for example # of approvals and build status checks.
