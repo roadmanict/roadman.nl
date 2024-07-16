@@ -1,0 +1,4 @@
+baseURL = 'https://roadman.nl/'
+languageCode = 'en-us'
+title = 'My Personal Blog'
+theme = 'stack'
