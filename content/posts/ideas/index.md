@@ -6,6 +6,9 @@ draft = true
 
 # Post ideas
 
+- [] Dotfiles
+- [] Stow
+- [] Angular-vault
 - [] Hexnode
 - [] Eloview
 - [] Nvim something
