@@ -1,6 +1,9 @@
 # Docker image to use for building
-image: klakegg/hugo:ext-alpine
+image: klakegg/hugo:latest-ext
 # Build command
 command: hugo build
 # Public directory
 public: public
+domains:
+  - roadman.nl
+  - www.roadman.nl
