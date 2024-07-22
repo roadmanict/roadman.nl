@@ -1,5 +1,5 @@
 # Docker image to use for building
-image: klakegg/ext-alpine
+image: klakegg/hugo:ext-alpine
 # Build command
 command: hugo build
 # Public directory
