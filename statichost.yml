@@ -1,5 +1,5 @@
 # Docker image to use for building
-image: klakegg/hugo:latest-ext
+image: hugomods/hugo
 # Build command
 command: hugo build
 # Public directory
