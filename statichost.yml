@@ -5,5 +5,5 @@ command: hugo
 # Public directory
 public: public
 domains:
-  - roadman.nl
   - www.roadman.nl
+  - roadman.nl
