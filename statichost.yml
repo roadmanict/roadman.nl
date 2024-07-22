@@ -1,7 +1,7 @@
 # Docker image to use for building
 image: hugomods/hugo
 # Build command
-command: hugo build
+command: hugo
 # Public directory
 public: public
 domains:
